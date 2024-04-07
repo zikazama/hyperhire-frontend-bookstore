@@ -1,15 +1,15 @@
 "use client";
 
 import { useEffect } from "react";
-import Home from "./components/Home";
+import MyBook from "./../components/MyBook";
 
 
-export default function Init() {
+export default function My() {
   useEffect(() => {
   
   }, []);
 
   return (
-    <Home/>
+    <MyBook/>
   );
 }
