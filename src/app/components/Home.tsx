@@ -44,7 +44,8 @@ export default function Home() {
           setBooks(data.rows);
         } else {
           // If fetching subsequent pages, append new books to existing list
-          setBooks((prevBooks) => [...prevBooks, ...data.rows]);
+          const temp: any = [...books, ...data.rows]; 
+          setBooks(temp);
         }
         if (data.rows.length === 0) {
           // No more data available
